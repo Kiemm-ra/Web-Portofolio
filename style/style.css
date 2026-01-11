@@ -12,7 +12,7 @@ body {
 .navbar-container {
     background-color: #E3F5FF;
     display: flex;
-    height: 115px;
+    height: 90px;
     width: 100%;
     position: fixed;
     padding: 38px ;
@@ -21,7 +21,7 @@ body {
     box-sizing: border-box;
     border-bottom-right-radius: 75px;
     border-bottom-left-radius: 75px;
-    box-shadow: 0 1px 10px rgb(0, 0, 0.25);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.25);
 }
 
 .navbar-logo {
@@ -92,4 +92,107 @@ ul .home {
 ul .home a {
     color: #FAFDFF;
     border-bottom: 1.5px solid #FAFDFF;
+}
+
+.circle {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+
+.circle-big{
+    background-color: #60CAF9;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -99999;
+    top: -400px;
+    right: -400px;
+    box-shadow: inset 10px -10px 20px rgb(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.circle-small {
+    position: absolute;
+    width: 900px;
+    height: 800px;
+    background-color: #60CAF9;
+    border-radius: 50%;
+    right: 200px;
+    bottom: -500px;
+}
+
+.hero-text h5 {
+    color: #0B2632;
+    font-size: 28.43px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    color: #0B2632;
+    font-size: 89.76px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btn-contact {
+    background-color: #0B2632;
+    color: #FAFDFF;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    transform: translateY(-5px);
+}
+
+.quote-box {
+    position: absolute;
+    right: -100px;
+    bottom: 100px;
+    max-width: 250px;
+    text-align: right;
+}
+
+.quote-box p {
+    font-size: 28.43px;
+    font-weight: bold;
+    color: #0B2632;
+}
+
+.icon-quote {
+    font-size: 89.76px;
+}
+
+.hero-img {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-img img {
+    max-height: 90vh;
 }
