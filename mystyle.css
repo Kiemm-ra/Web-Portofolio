@@ -24,12 +24,12 @@ nav ul {
 	padding: 0 10px;
 	display: flex;
 	list-style-type: none;
-	background-color: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
 	border-radius: 50px;
 	backdrop-filter: blur(10px);
-	box-shadow: 0 8px 32px 0 rgba(103, 134, 154, 0.37);
+	/* testing */
+	background: rgba(255, 255, 255, 0.4); /* Putih transparan */
+	border: 1px solid rgba(255, 255, 255, 0.6); /* Border lebih terang */
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Shadow untuk kedalaman */
 }
 
 nav li {
@@ -107,7 +107,7 @@ main {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	border-radius: 50px;
 	/* backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px); */
@@ -116,11 +116,15 @@ main {
 
 .main-paragraph {
 	width: 60%;
-	height: 150px;
+	height: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border: 1px solid black;
+	/* border: 1px solid black; */
+}
+
+.main-paragraph h1 {
+	font-size: 5rem;
 }
 
 .main-container img {
